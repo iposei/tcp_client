@@ -193,7 +193,10 @@ namespace prj301.NetworkLib
 			byte[] buffer = new byte[BufferSize];
 
 			NetworkStream ns = m_tcpClient.GetStream ();
-			IAsyncResult ar = ns.BeginRead(buffer, 0, BufferSize, new AsyncCallback(ReadCallBack), ns);
+			//IAsyncResult ar = ns.BeginRead(buffer, 0, BufferSize, new AsyncCallback(ReadCallBack), ns);
+			int recv = ns.Read (buffer, 0, BufferSize);
+			String data = Encoding.Default.GetString(buffer, 0, recv);
+			Console.WriteLine("您收到的信息是: " + data);
 		}
 		#endregion
 		#region Callback
@@ -212,7 +215,8 @@ namespace prj301.NetworkLib
 			int recv;
 
 			recv = ns.EndRead(ar);
-			data = String.Concat(data, Encoding.ASCII.GetString(read, 0, recv));
+			//Array.Copy(ns.
+			data = String.Concat(data, Encoding.Default.GetString(read, 0, recv));
 
 			//接收到的消息长度可能大于缓冲区总大小，反复循环直到读完为止
 			while (ns.DataAvailable)
