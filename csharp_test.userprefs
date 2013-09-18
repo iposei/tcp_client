@@ -1,0 +1,17 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="csharp_test/ConnectionMgr.cs">
+    <Files>
+      <File FileName="csharp_test/Program.cs" Line="38" Column="4" />
+      <File FileName="csharp_test/ConnectionMgr.cs" Line="153" Column="4" />
+      <File FileName="csharp_test/Message.cs" Line="50" Column="30" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint enabled="false" file="/Users/ethan/Project/csharp_test/csharp_test/ConnectionMgr.cs" line="122" column="29" />
+      <Breakpoint enabled="false" file="/Users/ethan/Project/csharp_test/csharp_test/ConnectionMgr.cs" line="142" column="27" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
